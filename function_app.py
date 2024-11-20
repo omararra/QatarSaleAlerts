@@ -9,7 +9,7 @@ import os
 
 app = func.FunctionApp()
 
-@app.timer_trigger(schedule="0 */5 * * * *", arg_name="myTimer", run_on_startup=False,
+@app.timer_trigger(schedule="0 0 * * * *", arg_name="myTimer", run_on_startup=False,
               use_monitor=False)
 def timer_trig(myTimer: func.TimerRequest) -> None:
     def get_car_listings():
