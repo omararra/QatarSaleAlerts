@@ -91,8 +91,8 @@ def timer_trig(myTimer: func.TimerRequest) -> None:
                 f"Mileage: {car_details[8]}\n"
                 f"Link: {car_details[9]}"
             ),
-            from_='whatsapp:+447311729387',
-            to='whatsapp:+97455741660',
+            from_='',
+            to='',
         )
     def check(current, previous):
         new_listings = [car for car in current if car not in previous]
