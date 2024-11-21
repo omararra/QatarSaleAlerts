@@ -105,6 +105,11 @@ def timer_trig(myTimer: func.TimerRequest) -> None:
             from_='whatsapp:+',
             to='whatsapp:+',
         )
+        client.messages.create(
+            body=content + f"Link: {car_details[9]}",
+            from_='whatsapp:+',
+            to='whatsapp:+',
+        )
         if car_details[4] == 'Personal':
             client.messages.create(
             body=content + f"Link: {car_details[9]}",
