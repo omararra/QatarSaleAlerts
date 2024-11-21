@@ -6,3 +6,4 @@ azure-functions
 requests
 twilio
 beautifulsoup4
+azure-storage-blob
